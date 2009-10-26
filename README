@@ -5,10 +5,10 @@ Mark Young youn0624
 Date: May 14, 2008
 
 ==NOTE==
-This is a console based app.  there is no web interface to this remediation.
+This is a console based app.  there is no Ib interface to this remediation.
 
 ==Documention Note==
-We have ran Doxygen on our code to generate some additional documentation.  It has a nice listing
+I have ran Doxygen on our code to generate some additional documentation.  It has a nice listing
 how our classes interact with eachother.  It is available in doc/html/index.html
 
 ==how to MAKE===
@@ -38,13 +38,13 @@ ADDITIONAL LIBRARIES USED:
 check the lib directory  /src/inc/lib
 
 ===Strextra===
-We created this library to convert c_str() to strings and the reverse.  using templates.
+I created this library to convert c_str() to strings and the reverse.  using templates.
 
 ===TinyXML===
-We are including TinyXML library.
+I are including TinyXML library.
 
 ===TinyXPATH===
-We have it in our directory but are not using it.
+I have it in our directory but are not using it.
 
 
 
