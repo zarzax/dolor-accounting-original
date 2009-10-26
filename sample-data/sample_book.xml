@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<setofbooks>
+  <name>Alice's Ledger</name>
+  <memo>I store important things here.</memo>
+  <cattree>
+    <cat name="all" code="0">
+      <cat name="Auto" code="1">
+        <cat name="Fuel" code="12"></cat>
+        <cat name="Insurance" code="13"></cat>
+        <cat name="Registration" code="14"></cat>
+        <cat name="Maintenance" code="15"></cat>
+        <cat name="Car Payment" code="16"></cat>
+      </cat>
+      <cat name="Food" code="4"></cat>
+      <cat name="Income" code="5"></cat>
+      <cat name="Savings" code="6"></cat>
+    </cat>
+  </cattree>
+  <account>
+    <name>Fells Wargo Checking</name>
+    <memo>This is my primary checking account.</memo>
+    <initialbalance>0.0</initialbalance>
+    <transaction>
+      <cleared>1</cleared>
+      <memo></memo>
+      <tofrom>University of Minnesota</tofrom>
+      <amount>530.75</amount>
+      <date>20080229</date>
+      <credit>1</credit>
+      <categories>
+        <category>6</category>
+      </categories>
+    </transaction>
+    <transaction>
+      <cleared>1</cleared>
+      <memo></memo>
+      <tofrom>Byerly's</tofrom>
+      <amount>98.30</amount>
+      <date>20080301</date>
+	  <credit>0</credit>
+      <categories>
+        <category>4</category>
+      </categories>
+    </transaction>
+    <transaction>
+      <cleared>1</cleared>
+      <memo></memo>
+      <tofrom>University of Minnesota</tofrom>
+      <amount>530.75</amount>
+      <date>20080314</date>
+      <credit>0</credit>
+      <categories>
+        <category>5</category>
+      </categories>
+    </transaction>
+    <transaction>
+      <cleared>1</cleared>
+      <memo></memo>
+      <tofrom>University of Minnesota</tofrom>
+      <amount>530.75</amount>
+      <date>20080328</date>
+      <credit>1</credit>
+      <categories>
+        <category>5</category>
+      </categories>
+    </transaction>
+    <transaction>
+      <cleared>1</cleared>
+      <memo>Paid by Check Card</memo>
+      <tofrom>BP</tofrom>
+      <amount>45.03</amount>
+      <date>20080401</date>
+	  <credit>0</credit>
+      <categories>
+        <category>12</category>
+      </categories>
+    </transaction>
+    <transaction>
+      <cleared>0</cleared>
+      <memo></memo>
+      <tofrom>WEBank Savings</tofrom>
+      <amount>1000.00</amount>
+      <date>20080402</date>
+	  <credit>0</credit>
+      <categories>
+        <category>6</category>
+      </categories>
+    </transaction>
+  </account>
+  <account>
+    <name>WEBank Savings</name>
+    <memo>Extra Account</memo>
+    <initialbalance>125.34</initialbalance>
+    <transaction>
+      <cleared>0</cleared>
+      <memo></memo>
+      <tofrom>Fells Wargo Checking</tofrom>
+      <amount>1000.00</amount>
+      <date>20080402</date>
+      <credit>1</credit>
+      <categories>
+        <category>6</category>
+      </categories>
+    </transaction>
+  </account>
+</setofbooks>

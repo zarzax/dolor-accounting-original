@@ -1,0 +1,50 @@
+README for DOLOR
+
+
+Mark Young youn0624 3082685
+Date: May 14, 2008
+
+==NOTE==
+This is a console based app.  there is no web interface to this remediation.
+
+==Documention Note==
+We have ran Doxygen on our code to generate some additional documentation.  It has a nice listing
+how our classes interact with eachother.  It is available in doc/html/index.html
+
+==how to MAKE===
+Test everything.
+	make
+	note: creates all the binarys in the bin dir and creates the binary 'dolor' in the main dir.  
+	runs make.cpp as main interface file.
+
+
+Classes (a bit out of date on public and private vars):
+check the inc directory /src/inc:
+
+Transaction - 	contains the info relating to a single transaction and how to print it to the screen.
+				functions: show(), setTransaction()
+				public vars: int amount, month, day, year, idnum; string memo, tofrom; bool isExpense;
+				
+Accounts - 		works with multiple transactions to form an account.  
+				functions: 	create(), shortShow(), longShow(), instertTransaction(), removeTransaction(), 
+							read(), write(), updateBalance(), empty(), emptyAccount()
+				public vars: string name, memo; int accountNumber, balance;
+				
+Books (from: set_of_books.h) - 	takes multiple accounts and stores them in xml listing.
+											
+
+	
+ADDITIONAL LIBRARIES USED:
+check the lib directory  /src/inc/lib
+
+===Strextra===
+We created this library to convert c_str() to strings and the reverse.  using templates.
+
+===TinyXML===
+We are including TinyXML library.
+
+===TinyXPATH===
+We have it in our directory but are not using it.
+
+
+

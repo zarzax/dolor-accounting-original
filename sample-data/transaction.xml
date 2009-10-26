@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<transaction>
+	<memo>transactionXML test..</memo>
+	<tofrom>GODJOBS</tofrom>
+	<amount>11666</amount>
+	<credit>1</credit>
+</transaction>

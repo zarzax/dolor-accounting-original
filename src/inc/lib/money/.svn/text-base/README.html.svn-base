@@ -1,0 +1,151 @@
+<html><head><title>IDI Software Component Library: Money Class (C++)</title>
+
+
+<meta name="description" content="IDI Software Component Library:  Money Class (C++)">
+<meta name="keywords" content="C++, money, class, Weisert"></head><body>
+<h1 align="center">IDI Software Component Library<br>
+<font size="-1">© 1996 Information Disciplines, Inc., Chicago</font></h1>  
+<h2><code>Money</code> type (C++ Class Definition)</h2>
+<multicol cols="2" gutter="30">
+<p>This special freeware version does not depend on any other IDI library items.
+   It supports only a single (but customizable) internal representation and a
+   single type of currency at a time (default=U.S.)
+</p><p>Note that none of C's built-in or primitive data types is satisfactory
+   for money data, either because of insufficient range or because of
+   rounding error.  Therefore, this class or a similar one is required in 
+   almost all business applications written in C++.
+</p><p>A series of articles in the C/C++ Users' Journal addressed conversion 
+   of money amounts to external representations, without proposing a 
+   practical Money class.  That publication rejected several articles we
+   submitted that presented a <code><b>Money</b></code> class or discussed
+   aspects of it.
+</p><p>This class was cited, with our permission, in 
+   <i>Problem Solving, Abstraction, and Design Using C++</i> by Frank 
+   Friedman and Elliot Koffmnan, 1997, Addison-Wesley, ISBN 0-201-88337-6.
+</p></multicol>
+<hr>
+<h3>Author:</h3>
+<p>Conrad Weisert, Information Disciplines, Inc., Chicago
+</p><h3>Purpose:</h3>
+<ul><li>To standardize and localize the internal representation of currency
+    </li><li>To facilitate operations on money data.
+    </li><li>To help assure accuracy and integrity in financial applications.
+</li></ul>
+<h3>Usage:</h3>
+<ol><li><code><b><font size="+1"> #include "<a href="http://www.idinews.com/sourcecode/Money.hpp">Money.hpp</a>"</font></b></code> before using any of the
+    methods described below.
+    </li><li>Link-edit with <code><b><a href="http://www.idinews.com/sourcecode/Money.cpp"><font size="+1"> 
+    Money.cpp</font></a></b></code>
+</li></ol>
+<h4>Constructors:</h4><b><pre>   Money  amt1;            //  Default constructor -- initial value is $0.00
+   Money  amt2=float_expr; //  Conversion from double float
+   Money  amt3=Money_expr; //  Copy constructor </pre></b>
+<p>Note that the conversion constructor makes it possible to use literal 
+   constants in the traditional format, e.g.<b><pre>      if (price &gt; 49.95) . . . </pre></b>
+</p><h4>Accessors:</h4><b><pre>   amt.MoneyInt()          //  Whole dollar (or other unit) portion (double)
+   amt.MoneyCents()        //  Decimal fraction portion (short) </pre></b>
+<h4>Arithmetic and relational operators</h4>	
+<ul><li>Unary <b>-</b> and <b>+</b>
+    </li><li>All binary operations involving either
+    <ul><li>two <code><b>Money</b></code> objects, or
+        </li><li>a <code><b>Money</b></code> object and a pure number
+    </li></ul>
+Such that the result is either a <code><b>Money</b></code> object or a 
+pure (double float) number.  
+     </li><li>The corresponding compound assignment operators
+     </li><li>The six relational operators		
+</li></ul>
+<p>The modulus operators <code><b> amt1%amt2 </b></code> and 
+   <code><b> amt1%n </b></code> are not supported in this freeware version.
+</p><p>Note that the existence of the conversion constructor legitimizes 
+   addition or subtraction of a pure number and a money object.  
+</p><h4>Stream I-O</h4>
+<ul><li>Output stream insertion: <b><code>    s &lt;&lt; Money_expr  </code></b> 
+        yields the common external representation:
+   <ul><li>leading minus sign, if required.
+       </li><li>dollar sign (or other currency symbol -- see <i>global constants</i> below
+       </li><li>3-digit groups separated by commas or periods ("0" if no
+       whole dollar part)
+       </li><li>2-digit (or more -- see <i>global constants</i> below) fractional portion.
+   </li></ul>
+    Example: <b><code> $39,448,033.50 </code></b> (if U.S.)
+    </li><li>Because of the wide variety of formats and the complexity of error checking
+    the input-stream extraction operator (<code><b>&gt;&gt;</b></code>) is not supported.
+    Read a floating point number and use the conversion constructor above.
+</li></ul><hr>
+<h3>Global constants:</h3>
+<p>Various static and macro constants make it easy to customize the Money
+   class for foreign currencies or special platforms.  They're intended 
+   for making a <i> standard</i> version within an organization or for a
+   major project, and should rarely if ever be changed in individual programs.
+</p><h4>Output formatting constants</h4>
+<p>These constants control the format produced by the output-stream
+   insertion operator, described above.
+<table border="1" cellpadding="4">
+<tbody><tr><td align="center" width="25%"><b>Name</b></td>
+    <td align="center" width="40%"><b>Purpose</b></td>
+    <td align="center" width="20%"><b>Default value</b><br>
+				set in <code><b>Money.cpp</b></code></td>
+</tr><tr>
+<td><code><b>Money::pfx_symbol</b></code></td>
+<td>Symbol to be printed to the left of the money amount.</td>
+<td align="center"><code><b>"$"</b></code></td>
+</tr><tr>
+<td><code><b>Money::sfx_symbol</b></code></td>
+<td>Symbol to be printed to the right of the money amount.</td>
+<td align="center"><code><b>""</b></code></td>
+</tr><tr>
+<td><code><b>Money::decimal_point</b></code></td>
+<td>character to separate whole units from 1/100ths.</td>
+<td align="center"><code><b>'.'</b></code></td>
+</tr><tr>
+<td><code><b>Money::group_separator</b></code></td>
+<td>character to separate groups of three digits.</td>
+<td align="center"><code><b>','</b></code></td>
+</tr><tr>
+<td><code><b>Money::unit_name</b></code></td>
+<td>full name of monetary unit</td>
+<td align="center"><code><b>"dollar"</b></code></td>
+</tr><tr>
+<td><code><b>Money::cent_name</b></code></td>
+<td>name of fractional unit</td>
+<td align="center"><code><b>"cent"</b></code></td>
+</tr></tbody></table> 
+</p><p>Example:  to initialize the class to format French money: <b><pre>    Money::pfx_symbol     = "";
+    Money::sfx_symbol     = "f";
+    Money::decimal_point  = ',';
+    Money::group_separator= '.';
+    Money::unit_name      = "franc";
+    Money::cent_name      = "centime"; </pre></b>
+
+</p><h4>To change the internal representation</h4>
+<ul><li><u>To set the internal scaling and precision</u>
+<p>The default scaling assumes that the smallest value is one cent (or 1/100 
+   of the unit).  When the constructor converts a floating point value to
+   a Money object it multiplies by 100, thus avoiding fractional round-off 
+   errors in computations.
+</p><p>If you need to keep track of finer amounts of money you can set the 
+   global constant <b><code>Money::scale</code></b> to a different value.
+   For example, to handle both pennies and 8ths of a dollar (used in some
+   stock prices) <b><code>Money::scale=200;</code></b>, or to handle mills
+   <b><code>Money::scale=1000</code></b>.   
+   Naturally, you must do this before creating any <b><code>Money</code></b> objects.
+</p><p></p></li><li><u>To change the underlying data type</u>
+<p>The default internal representation is a <b><code> double </code></b>
+   number.  This was chosen because <b><code> double </code></b> is the only primitive type that
+   supports sufficient range in certain popular implementations (Microsoft, Borland).
+</p><p>If the platform supports efficient 64-bit <b><code><font size="+1">long</font></code><font size="+1"></font></b><font size="+1"> </font>integers, for 
+   example, you can override the default by placing a <b><code>#define</code></b> 
+   before the <b><code>#include</code></b>, like this: <b><pre>        #define  MoneyIType  long
+        #include "money.hpp" </pre></b>
+   That is, in fact, the <i>default</i> representation in IDI's equivalent 
+   <a href="http://www.idinews.com/sourcecode/MoneyJava.html"> Java class </a>, since Java guarantees 64-bit long integers.
+   For compatibility with older files, some users prefer to use a <i>packed decimal</i>
+   class, which is interpretive and very slow on many modern computers.  	
+</p></li></ul>
+<hr>
+<p align="right">Return to <a href="http://www.idinews.com/freeware.html">Freeware directory</a><br>
+               Return to <a href="http://www.idinews.com/sourcecode/..%5Cindex.html">IDI home page</a>
+<br>Last modified 22 November, 1999
+
+</p></body></html>

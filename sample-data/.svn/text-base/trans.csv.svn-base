@@ -1,0 +1,15 @@
+5000,5,1,2007,0,Inital Account Opening!! PAYCHECK,self,false
+100,5,24,2007,1,Power Bill,Xcel,true
+100,5,25,2007,2,Telephone Bill,Quest,true
+1050,5,26,2007,3,RENT,Mayland Management,true
+650,5,27,2007,4,Car Payment,GMAC,true
+600,5,28,2007,5,FOOD,Rainbow,true
+15,5,29,2007,6,Birthday Present,mom,false
+1000,5,30,2007,7,ATM: Cash,self,true
+5000,6,1,2007,8,PAYCHECK,self,false
+100,6,24,2007,9,Power Bill,Xcel,true
+100,6,25,2007,10,Telephone Bill,Quest,true
+1050,6,26,2007,11,RENT,Mayland Management,true
+650,6,27,2007,12,Car Payment,GMAC,true
+600,6,28,2007,13,FOOD,Rainbow,true
+1000,6,29,2007,14,ATM: Cash,self,true

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" ?>
+<set_of_books>
+<!-- set of books -->
+	<Book name="set1">
+		<!-- book info -->
+		<memo>Test book 1</memo>
+		
+	    <!-- Account 1 -->
+	    <Account accountNumber="1">
+	        <name>Account 1</name>
+	        <memo>This is the test account 1</memo>
+			<transactionList>
+				<Transaction idnum="1" isExpense="false">
+					<amount>5000</amount>
+					<month>5</month>
+					<day>1</day>
+					<year>2007</year>
+					<memo>Initial Account Opening!</memo>
+					<tofrom>self</tofrom>
+				</Transaction>
+				<Transaction idnum="2" isExpense="true">
+					<amount>150</amount>
+					<month>5</month>
+					<day>10</day>
+					<year>2007</year>
+					<memo>BILL</memo>
+					<tofrom>Xcel</tofrom>
+				</Transaction>
+				<Transaction idnum="3" isExpense="true">
+					<amount>1099</amount>
+					<month>5</month>
+					<day>11</day>
+					<year>2007</year>
+					<memo>RENT</memo>
+					<tofrom>Mayland Management</tofrom>
+				</Transaction>
+				<Transaction idnum="4" isExpense="true">
+					<amount>230</amount>
+					<month>5</month>
+					<day>12</day>
+					<year>2007</year>
+					<memo>BILL</memo>
+					<tofrom>GMAC</tofrom>
+				</Transaction>
+			</transactionList>
+	    </Account>
+		
+		<!-- Account 2 -->
+		<Account accountNumber="2">
+	        <name>Account 2</name>
+	        <memo>This is the test account 2</memo>
+			<transactionList>
+				<Transaction idnum="1" isExpense="false">
+					<amount>10000</amount>
+					<month>6</month>
+					<day>1</day>
+					<year>2007</year>
+					<memo>Initial Account Opening!</memo>
+					<tofrom>self</tofrom>
+				</Transaction>
+				<Transaction idnum="2" isExpense="true">
+					<amount>500</amount>
+					<month>6</month>
+					<day>20</day>
+					<year>2007</year>
+					<memo>FOOD</memo>
+					<tofrom>Rainbow</tofrom>
+				</Transaction>
+				<Transaction idnum="3" isExpense="true">
+					<amount>23</amount>
+					<month>6</month>
+					<day>21</day>
+					<year>2007</year>
+					<memo>Movie Date Night</memo>
+					<tofrom>AMC Theaters</tofrom>
+				</Transaction>
+				<Transaction idnum="4" isExpense="false">
+					<amount>666</amount>
+					<month>6</month>
+					<day>22</day>
+					<year>2007</year>
+					<memo>Casino Win!!!</memo>
+					<tofrom>Mystic Lake Casino</tofrom>
+				</Transaction>
+			</transactionList>
+	    </Account>
+	</Book>
+</set_of_books>

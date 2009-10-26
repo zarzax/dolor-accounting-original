@@ -1,0 +1,31 @@
+8
+
+dir
+137
+svn+ssh://youn0624@shaggy.itlabs.umn.edu/class/c3081g17/svn-repos/dolor/trunk/doc
+svn+ssh://youn0624@shaggy.itlabs.umn.edu/class/c3081g17/svn-repos
+
+
+
+2008-05-09T18:49:39.206807Z
+110
+youn0624
+
+
+svn:special svn:externals svn:needs-lock
+
+Doxyfile
+file
+
+
+
+
+2008-05-09T18:48:55.000000Z
+108cbee315bd9066d4af284b36f8e6b5
+2008-05-09T18:49:39.206807Z
+110
+youn0624
+
+html
+dir
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<setofbooks>
+    <name>bookset 1</name>
+    <memo>testing bookset</memo>
+    <account>
+        <name>ac1</name>
+        <memo>testing</memo>
+        <initialbalance>10666</initialbalance>
+        <transaction>
+            <memo>test memo</memo>
+            <tofrom>mark</tofrom>
+            <amount>5000.55</amount>
+            <date>19840524</date>
+            <credit>0</credit>
+        </transaction>
+        <transaction>
+            <memo>test memo2</memo>
+            <tofrom>john</tofrom>
+            <amount>6614.12</amount>
+            <date>19840527</date>
+            <credit>1</credit>
+        </transaction>
+    </account>
+    <account>
+        <name>ac2</name>
+        <memo>testing more</memo>
+        <initialbalance>1300</initialbalance>
+        <transaction>
+            <memo>test memo</memo>
+            <tofrom>mark</tofrom>
+            <amount>5000</amount>
+            <date>19840524</date>
+            <credit>0</credit>
+        </transaction>
+        <transaction>
+            <memo>test memo2</memo>
+            <tofrom>john</tofrom>
+            <amount>10.50</amount>
+            <date>19840527</date>
+            <credit>1</credit>
+        </transaction>
+    </account>
+</setofbooks>

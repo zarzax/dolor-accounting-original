@@ -1,0 +1,61 @@
+<?xml version="1.0" ?> 
+<setofbooks>
+	<name>Alice's Ledger</name>
+	<memo>I store important things here.</memo>
+	<account>
+		<name>Fells Wargo Checking</name>
+		<memo>This is my primary checking account.</memo>
+		<initialbalance>0.0</initialbalance>
+		<transaction>
+			<memo></memo>
+			<tofrom>University of Minnesota</tofrom>
+			<amount>530.75</amount>
+			<date>20080229</date>
+			<credit>1</credit>
+		</transaction>
+		<transaction>
+			<memo></memo>
+			<tofrom>Byerly's</tofrom>
+			<amount>98.30</amount>
+			<date>20080301</date>
+		</transaction>
+		<transaction>
+			<memo></memo>
+			<tofrom>University of Minnesota</tofrom>
+			<amount>530.75</amount>
+			<date>20080314</date>
+			<credit>1</credit>
+		</transaction>
+		<transaction>
+			<memo></memo>
+			<tofrom>University of Minnesota</tofrom>
+			<amount>530.75</amount>
+			<date>20080328</date>
+			<credit>1</credit>
+		</transaction>
+		<transaction>
+			<memo>Paid by Check Card</memo>
+			<tofrom>BP</tofrom>
+			<amount>45.03</amount>
+			<date>20080401</date>
+		</transaction>
+		<transaction>
+			<memo></memo>
+			<tofrom>WEBank Savings</tofrom>
+			<amount>1000.00</amount>
+			<date>20080402</date>
+		</transaction>
+	</account>	
+	<account>
+		<name>WEBank Savings</name>
+		<memo>Extra Account</memo>
+		<initialbalance>125.34</initialbalance>
+		<transaction>
+			<memo></memo>
+			<tofrom>Fells Wargo Checking</tofrom>
+			<amount>1000.00</amount>
+			<date>20080402</date>
+			<credit>1</credit>
+		</transaction>
+	</account>
+</setofbooks>

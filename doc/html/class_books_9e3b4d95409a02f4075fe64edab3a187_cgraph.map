@@ -1,0 +1,12 @@
+<area shape="rect" href="$class_accounts.html#949d11a108ae7b2b0bc0f5143f1f710d" title="Accounts::getXML" alt="" coords="308,63,442,89">
+<area shape="rect" href="$class_accounts.html#16331b18b5ec6c4a92ce5cb6ca16b281" title="Accounts::insertTransactionByHand" alt="" coords="255,113,495,140">
+<area shape="rect" href="$class_category.html#7daeb9ff355352d8d26a3ca418edf2a3" title="Category::addSubCategory" alt="" coords="548,56,735,83">
+<area shape="rect" href="$class_accounts.html#ed4fc3f2174bf632807f2ea6777b34cf" title="Accounts::insertTransaction" alt="" coords="546,113,738,140">
+<area shape="rect" href="$class_category.html#f02e293a7a9d6ab534f68b87aa94d42d" title="Category::listCategory" alt="" coords="563,201,720,228">
+<area shape="rect" href="$class_category.html#f4bdce768617bffca4cba5d75186daed" title="Category::addCategory" alt="" coords="795,5,958,32">
+<area shape="rect" href="$class_category.html#84e2ba6fe0fabf091ec4e1f4dd7865e0" title="Category::catcmp" alt="" coords="812,56,940,83">
+<area shape="rect" href="$class_category.html#28f6354c7d55176022bacc600ddb4cfb" title="Category::getXML" alt="" coords="1032,5,1163,32">
+<area shape="rect" href="$class_transaction.html#7aeedb09fdefe771d542b30b42ad9581" title="Transaction::getXML" alt="" coords="803,107,950,133">
+<area shape="rect" href="$class_accounts.html#45369af487004e0ce9a195b2751a7736" title="Accounts::updateBalance" alt="" coords="787,157,966,184">
+<area shape="rect" href="$class_transaction.html#36df9cd2034d472db1d88d199f444bde" title="Transaction::getAmount" alt="" coords="1014,157,1182,184">
+<area shape="rect" href="$class_category.html#010788d8f52233e823f044b624836fdc" title="Category::print" alt="" coords="820,208,932,235">

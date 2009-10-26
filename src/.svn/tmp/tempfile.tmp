@@ -1,0 +1,101 @@
+ /* A simple program to exercise the Transaction class
+
+Author: Mark Young, John Kreuch
+
+  * @ID:				$Id$
+  * @lastmodified    	$Date$ 
+  * @modifiedby      	$LastChangedBy$ 
+  * @version         	$Revision$ 
+  
+*/
+
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+#include "inc/set_of_books.h"
+#include "inc/lib/tinyxml/tinyxml.h"
+
+
+using namespace std;
+
+void displayMenu()
+{
+	int answer;
+	string filename;
+	
+	system( "clear" );
+	
+	cout << "DOLOR --  Accounting Program\n"
+		 << "############################\n\n" ;
+		 
+<<<<<<< .mine
+	cout << "READ ; SAVE ; OPEN ACCOUNT; ADD ACCOUNT (adda) ; LIST CATEGORIES ; ADD SUB-CATEGORY (adds) " ;
+=======
+	cout << "1. READ  \n 2. SAVE \n 3. OPEN ACCOUNT \n 4. ADD ACCOUNT \n  5. LIST CATEGORIES \n 6. ADD SUB-CATEGORY  \n";
+	cout << "7. QUIT \n (Enter Numerical Value)\n"
+>>>>>>> .r87
+	cin >> answer ;
+	cout << "\n\n" ; 
+	
+	
+	doWork( answer);
+
+
+}
+
+void doWork( int answer )
+{
+	switch (answer) {
+		case 1:
+			cout<<"Please enter a file name \n";
+			cin >>filename;
+			read(filename);
+			displayMenu();
+		break;
+		
+		case 2: 
+			write(filename);
+			displayMen();
+		break;
+		
+		case 3:  
+			cout<< "Please Select an account to open \n";
+			listaccounts();
+		break;
+		
+		case 4:
+		insertAccountByHand( )
+		displayMenu();
+	
+		break
+		
+		case 5:
+		listCaterogry(0);
+		displayMenu();
+		break;
+		
+		case 6:
+		
+		break;
+		
+		case 7:
+		cout<< "Goodbye \n";
+		break;
+		
+		default:
+		cout<<"Invalid Selection, Try again\n";
+		displayMenu();
+		break;
+	}
+
+	
+}
+
+int main() {	
+	
+	displayMenu();
+   
+}
+

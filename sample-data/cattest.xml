@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<cattest>
+    <cat name="all" code="0">
+        <cat name="food" code="1">
+            <cat name="fastfood" code="11" />
+        </cat>
+        <cat name="auto" code="2" />
+        <cat name="home" code="3" />
+    </cat>
+</cattest>
